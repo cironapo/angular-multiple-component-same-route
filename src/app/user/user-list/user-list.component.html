@@ -1,0 +1,18 @@
+<h1>User list</h1>
+<table>
+  <thead>
+      <th>First name</th>
+      <th>Last name</th>
+      <th></th>
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.name}}</td>
+      <td>{{user.surname}}</td>
+      <td>
+        <button>view profile</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
